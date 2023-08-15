@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="Slike/f1ikonica.ico">
+    <script src="https://kit.fontawesome.com/e83ab3cb64.js" crossorigin="anonymous"></script>
+    <title>Sing in</title>
+</head>
+<body>
+    <div class="pre-header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>Formula 1 - Home of racing</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="main-nav">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="dropdown main-menu">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Menu
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                          <li><a class="dropdown-item" href="index.html">Home</a></li>
+                          <li><a class="dropdown-item" href="about.html">About</a></li>
+                          <li><a class="dropdown-item" href="contact.html">Contact</a></li>
+                          <li><a class="dropdown-item" href="singin.html">Sing in</a></li>
+                        </div>
+                      </div>
+                    
+                </div>
+                <div class="col-md-2">
+                    <img src="Slike/F1.png" alt="">
+                
+                </div>
+            </div>
+        </div>
+    </div>    
+</header>
+
+
+<div class="singin">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <form action="" name="registracija" class="forma">
+                    <label for="ime">Your name: </label>
+                    <input type="text" name="ime" id="ime" onclick="restart(this)">
+                    <small id="greska-ime" class="greska"></small>
+            
+                    <label for="email">Email: </label>
+                    <input type="text" name="email" id="email" onclick="restart(this)">
+                    <small id="greska-email" class="greska"></small>
+            
+                    <label for="pass1">Password: </label>
+                    <input type="password" name="pass1" id="pass1" onclick="restart(this)">
+                    <small id="greska-pass1" class="greska"></small>
+            
+                    <label for="pass2">Confirm password: </label>
+                    <input type="password" name="pass2" id="pass2" onclick="restart(this)">
+                    <small id="greska-pass2" class="greska"></small>
+            
+                    <small><b>Note:</b>The password must contain 8 characters, an uppercase letter, a lowercase letter, a number and a symbol</small>
+                    <input type="button" value="Confirm" onclick="proveraRegistracije()">
+                    <p id="polje-greska"></p>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+<footer class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <img src="Slike/F1.png" alt="">
+                <ul>
+                    <li><a href="#">f1@email.com</a></li>
+                    <li><a href="#"></a>radovandinic00@gmail.com</li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h4>Permalinks</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                     <li><a href="singin.html">Singin</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h4>Privacy</h4>
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>Terms and condition</li>
+                    <li>Refund Policy</li>
+                </ul>
+            </div>
+
+            <div class="col-md-3">
+                <h4>Contact Us</h4>
+                <ul>
+                    <li>062-762/874</li>
+                    <li>radovandinic00@gmail.com</li>
+                    <li>
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a> 
+                        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<div class="after-footer">
+    <small>Copyright &copy; Radovan Dinić Diplomski Rad</small>
+</div>
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+<script src="script.js"></script>
+</body>
+</html>
